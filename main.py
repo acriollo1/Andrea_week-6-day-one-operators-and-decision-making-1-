@@ -36,26 +36,45 @@ print(newseconds)
 # == equal
 # != different or not equal to
 
+#learning comparison operators 
+my_bool = 10 == 20 #true or false
+print(my_bool) # false
+
+my_bool = 5+5 == 10 - 0
+print(my_bool) # true
+
+my_bool = 'white' == 'White'.lower()
+print(my_bool)
+
+my_bool = 4 < 5 and 5 > 6
+print(my_bool)
+
+
 # Comparison Operators Practice 1:
 # ask the user for their age
-# if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
-age = input("What is your age?")
-canVote = age >= 18 and age<= 21
-print("Vote?" + canVote)
-
+# if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time
+age = int(input("What is your age?"))
+if age >= 18 and age <= 21:
+  print("You cant vote")
+else:
+  print("Better luck next time")
 
 # Comparison Operators Practice  2:
 # Create two variables (num1 and num2) with the following values: 36 and 17. Check if num1 is greater than or equal to num2 and store the result of that comparison in a variable called my_bool
-
-
-
+num1 = 36
+num2 = 17
+my_bool = num1 >= num2 
+print(my_bool)
 
 # Comparison Operators Practice  3:
 # Create two variables (num1 and num2):
 # Inside num1, store the result of the square root of 25
 # Inside num2, store the number 5.
 # Check if num1 is equal to num2 and store the result of that comparison in a variable called my_bool.
-
+num1 = 25**2
+num2 = 5
+my_bool = num1 = num2 
+print(my_bool)
 
 # Comparison Operators Practice #4:
 # Create two variables (num1 and num2):
@@ -65,11 +84,10 @@ print("Vote?" + canVote)
 # Inside num2, store the result of 24 x 8
 
 # Check if num1 is different from num2 and store the result of that comparison in a variable called my_bool.
-
-
-
-
-
+num1 = 64*3
+num2 = 24*8
+my_bool = num1 != num2
+print(my_bool)
 
 
 ##############################logical operators##################################################
