@@ -11,19 +11,22 @@
 
 # review practice
 # Append the value of current to the end of the list seconds Please use the list.append() method to do that.
-
-
 seconds = [1.23, 1.45, 1.02]
 current = 1.11
+seconds.append(current)
+print(seconds)
 
 # Remove item 1.45 from seconds.
 seconds = [1.23, 1.45, 1.02, 1.11]
-
+seconds.remove(1.45)
+print(seconds)
 
 # Remove items 1.45, 1.02, and 1.11 from seconds.
 seconds = [1.23, 1.45, 1.02, 1.11]
-
-
+seconds.remove(1.45)
+seconds.remove(1.02)
+newseconds = seconds[:1]
+print(newseconds)
 ################################comparison operators#########################
 #remember....
 # > greater
@@ -36,9 +39,9 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # Comparison Operators Practice 1:
 # ask the user for their age
 # if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
-
-
-
+age = input("What is your age?")
+canVote = age >= 18 and age<= 21
+print("Vote?" + canVote)
 
 
 # Comparison Operators Practice  2:
