@@ -145,9 +145,11 @@ print(my_bool)
 # are not found in the sentence below, and store the result (a boolean) in a variable called my_bool:
 
 # "When something is important enough, you do it even if the odds are against you" - Elon Musk
+text = "When something is important enough, you do it even if the odds are against you"
 word1 = "success"
 word2 = "technology"
-my_bool = 
+my_bool = word1 not in text and word2 not in text
+print(my_bool)
 
 ########################################decision making in python#####################################
 
@@ -170,7 +172,14 @@ my_bool =
 # "num2 is greater than num1"
 # "num1 and num2 are equal"
 
-
+num1 = int(input("Enter a number:"))
+num2 = int(input("Enter another number:"))
+if num1 > num2:
+  print("num1 is greater than num2")
+if num2 > num1:
+  print("num2 is greater than num1")
+if num1 == num2:
+  print("num1 and num2 are equal")
 # Decision Making Practice #2
 # The laws of a certain country establish that an adult can drive if they are of legal age (18 years or older), and have a driver's license.
 
