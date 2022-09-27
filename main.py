@@ -71,9 +71,10 @@ print(my_bool)
 # Inside num1, store the result of the square root of 25
 # Inside num2, store the number 5.
 # Check if num1 is equal to num2 and store the result of that comparison in a variable called my_bool.
-num1 = 25**2
+import math
+num1 = math.sqrt(25)
 num2 = 5
-my_bool = num1 = num2 
+my_bool = num1 == num2 
 print(my_bool)
 
 # Comparison Operators Practice #4:
@@ -91,7 +92,16 @@ print(my_bool)
 
 
 ##############################logical operators##################################################
+#logical operators lesson
+my_bool = (55 == 10) and (5 == 2*3)
+print(my_bool)
 
+my_bool = 1 == 10 or 3 == 3
+print(my_bool)
+
+text = "this sentence is short"
+my_bool = ('sentence' in text) and ('python' not in text)
+print(my_bool)
 
 # Logical Operators Practice #1
 # Create three variables (num1, num2, and num3):
@@ -103,9 +113,11 @@ print(my_bool)
 # Inside num3, store the value 48
 
 # Check if num1 is greater than num2, and less than num3. Store the result of that comparison in a variable called my_bool.
-
-
-
+num1 = 36
+num2 = 72/2
+num3 = 48
+my_bool = num1 > num2 and num1 < num3 
+print(my_bool)
 
 # Logical Operators Practice #2
 # Create three variables (num1, num2, and num3):
@@ -117,8 +129,11 @@ print(my_bool)
 # Inside num3, store the value 48
 
 # Check if num1 is greater than num2, or less than num3. Store the result of that comparison in a variable called my_bool.
-
-
+num1 = 36 
+num2 = 72/2
+num3 = 48
+my_bool = num1 > num2 or num1 < num3
+print(my_bool)
 
 # Logical Operators Practice #3
 # Check if the words:
@@ -130,10 +145,9 @@ print(my_bool)
 # are not found in the sentence below, and store the result (a boolean) in a variable called my_bool:
 
 # "When something is important enough, you do it even if the odds are against you" - Elon Musk
-
-
-
-
+word1 = "success"
+word2 = "technology"
+my_bool = 
 
 ########################################decision making in python#####################################
 
